@@ -1,4 +1,4 @@
-name: Workflow #1 yolo so proud
+name: Workflow-num1-so-proud
 on: workflow_dispatch
 jobs:
   job1:
