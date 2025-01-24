@@ -1,5 +1,6 @@
 name: Workflow-num1-so-proud
-on: workflow_dispatch
+on:
+  workflow_dispatch:
 jobs:
   job1:
     runs-on: ubuntu-latest
