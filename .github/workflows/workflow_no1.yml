@@ -1,0 +1,13 @@
+name: Workflow #1 yolo so proud
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hi mom
+        run: echo "hi mom"
+      - name: complex_step bro
+        run: |
+            echo "hello mother"
+            echo "goodbye mother"
+  
