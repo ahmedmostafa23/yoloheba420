@@ -10,7 +10,8 @@ jobs:
       - name: install python packages
         run: pip install -r requirements.txt
       - name: run tests
-        run: |
-          pytest
-          flake8
-          mypy --strict .
+        run: pytest
+      - name: run lint test
+        run: flake8
+      - name: run mypy
+        run: mypy --strict .
