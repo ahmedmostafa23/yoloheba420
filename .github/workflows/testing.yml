@@ -5,13 +5,12 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      -  name: get code from repo
-         uses: actions/checkout@v3
-      -  name: install python packages
-         run: pip install -r requirements.txt
-      -  name: run tests
-         run: |
-           pytest
-           flake8
-           mypy --strict .
-  
+      - name: get code from repo
+        uses: actions/checkout@v3
+      - name: install python packages
+        run: pip install -r requirements.txt
+      - name: run tests
+        run: |
+          pytest
+          flake8
+          mypy --strict .
